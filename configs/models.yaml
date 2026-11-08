@@ -1,0 +1,6 @@
+models:
+  embedder: BAAI/bge-m3
+  reranker: null
+  llm_provider: gemini       # gemini | ollama
+  llm_model: gemini-2.5-flash
+  llm_temperature: 0.0

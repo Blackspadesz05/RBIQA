@@ -1,0 +1,28 @@
+project_name: rbiqa
+
+entity_types:
+  - NBFC
+  - Payments Banks
+
+paths:
+  raw_dir: data/raw
+  interim_dir: data/interim
+  processed_dir: data/processed
+  eval_dir: data/eval
+  manifest: data/manifest.csv
+
+chunking:
+  strategy: structure # fixed | structure
+  chunk_size_tokens: 512
+  overlap_tokens: 64
+
+retrieval:
+  mode: dense # dense | bm25 | hybrid
+  top_k: 5
+  rerank: false
+  rerank_candidates: 20
+
+scraper:
+  user_agent: "RBIQA-research/0.1 (academic project)"
+  requests_per_second: 0.5
+  timeout_seconds: 30

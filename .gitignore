@@ -1,0 +1,13 @@
+__pycache__/
+.venv/
+.pytest_cache/
+.mypy_cache/
+
+.env
+
+data/raw/*
+data/interim/*
+data/processed/*
+!data/**/.gitkeep
+
+docs/
